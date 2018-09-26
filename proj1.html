@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!--
+Paul Barrett
+CS316 Project 1
+-->
+
+<html>
+	<head>
+		<title>Xelkai's Intergalactic Travel Agengy</title>
+	</head>
+
+	<body>
+		<!-- Description of how to use conversion tool -->
+		<h1>Compute Distance Between 2 Planets!</h1>
+		<h2>Input Format:</h2>
+		The unit types this program can convert:
+		<br>
+		<h3>Distance: parsec, lightyear, kilometer, xlarn</h3>
+		<h3>Angle: degree, radian, xarnian</h3>
+		<!-- Form for collecting input -->
+		<form action="galactic_travel.cgi" method="get">
+			Origin Distance from Earth:
+			Distance <input type="text" name="distx">
+			Units
+			<!-- Dropdown menu for distance x unit input -->
+			<select id="unitx" name="unitx">
+				<option value="kilometer">Kilometers</option>
+				<option value="lightyear">Lightyears</option>
+				<option value="parsec">Parsecs</option>
+				<option value="xlarn">Xlarns</option>
+			</select><br><br>
+			Destination Distance from Earth:
+			Distance <input type="text" name="disty">
+			Units 
+			<!-- Dropdown menu for distance y unit input -->
+			<select id="unity" name="unity">
+				<option value="kilometer">Kilometers</option>
+				<option value="lightyear">Lightyears</option>
+				<option value="parsec">Parsecs</option>
+				<option value="xlarn">Xlarns</option>
+			</select><br><br>
+			Angle separation Earth-proxy:
+			Quantity <input type="text" name="anglea">
+			Units
+			<!-- Dropdown menut for angle unit input -->
+			<select id="unita" name="unita">
+				<option value="degree">Degrees</option>
+				<option value="radian">Radians</option>
+				<option value="xarnian">Xarnians</option>
+			</select><br><br>
+			Distance Computed Units:
+			<!-- Dropdown menu for unit answer input -->
+			<select id="unitanswer" name="unitanswer">
+				<option value="kilometer">Kilometers</option>
+				<option value="lightyear">Lightyears</option>
+				<option value="parsec">Parsecs</option>
+				<option value="xlarn">Xlarns</option>
+			</select><br><br>
+			<input type="submit" value="Compute">
+		</form>
+
+		<br><br><br>
+		<i>Written by Paul Barrett for Xelkalai</i>
+	</body>
+</html>
+
